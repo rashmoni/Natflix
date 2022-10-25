@@ -4,14 +4,12 @@ import com.novare.natflix.Entity.Content;
 import com.novare.natflix.Service.ContentService;
 import org.json.simple.JSONObject;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 @RestController
 @RequestMapping(path = "/api")
 public class ContentController {
 
     public final ContentService contentService;
-
     public ContentController(ContentService contentService) {
         this.contentService = contentService;
     }
@@ -30,7 +28,6 @@ public class ContentController {
         return contentService.getSeries();
     }
 
-
     @GetMapping("/content/documentaries")
     public List<Content> getDocumentaries() {
         return contentService.getDocumentaries();
@@ -43,6 +40,18 @@ public class ContentController {
         return "Successfully created new movie";
     }
 
+    @DeleteMapping(path ="/content/detele/"+"{contentID}")
+    public String deleteContent(@PathVariable("contentID") Long id) {
+       contentService.deleteContent(id);
+        return "Successfully deleted";
+    }
 
+
+    @CrossOrigin(origins = "http://localhost:3000/content/update/")
+    @PutMapping(path ="/content/update/")
+    public String updateContent(@RequestBody JSONObject payload) {
+        contentService.updateContent(payload);
+        return "Successfully updated the movie";
+    }
 
 }

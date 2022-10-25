@@ -1,4 +1,4 @@
-package com.novare.natflix.Service;
+package com.novare.natflix.utils;
 
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.PutObjectRequest;

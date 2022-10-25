@@ -1,4 +1,4 @@
-package com.novare.natflix.Service;
+package com.novare.natflix.utils;
 
 import java.io.File;
 import java.io.FileOutputStream;
