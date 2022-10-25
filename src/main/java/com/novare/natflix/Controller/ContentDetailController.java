@@ -2,10 +2,9 @@ package com.novare.natflix.Controller;
 
 import com.novare.natflix.Entity.ContentDetails;
 import com.novare.natflix.Service.ContentDetailService;
+import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -28,5 +27,11 @@ public class ContentDetailController {
     @GetMapping(path ="/content/details")
     public List<ContentDetails> getContent() {
         return contentDetailService.getContentDetails();
+    }
+
+    @CrossOrigin(origins = "http://localhost:3000/content/details/update/")
+    @PutMapping(path ="/content/details/update")
+    public ContentDetails updateContent(@RequestBody JSONObject payload) {
+        return contentDetailService.updateContentDetail(payload);
     }
 }
