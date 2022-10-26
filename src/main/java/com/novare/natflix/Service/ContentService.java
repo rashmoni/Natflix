@@ -117,7 +117,6 @@ public class ContentService {
         String thumbnailBase64String = ((String) payload.get("thumbnail_url"));
         String thumbNailURL = imageHandler.getImageUrl(thumbnailBase64String);
 
-        content.setId(id);
         content.setTitle(title);
         content.setSummary(summary);
         content.setCategory_id(contentCategory);

@@ -3,6 +3,7 @@ package com.novare.natflix.Controller;
 import com.novare.natflix.Entity.Content;
 import com.novare.natflix.Service.ContentService;
 import org.json.simple.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 @RestController
@@ -10,6 +11,8 @@ import java.util.List;
 public class ContentController {
 
     public final ContentService contentService;
+
+    @Autowired
     public ContentController(ContentService contentService) {
         this.contentService = contentService;
     }
