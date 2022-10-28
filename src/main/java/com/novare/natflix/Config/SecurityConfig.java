@@ -33,6 +33,7 @@ public class SecurityConfig {
         http.csrf().disable()
                 .authorizeRequests()
                 .antMatchers(HttpMethod.GET,"/", "/static/**").permitAll()
+                .antMatchers(HttpMethod.GET ,"/api/**").permitAll()
                 .antMatchers(HttpMethod.POST ,"/api/signup").permitAll()
                 .antMatchers("/api/admin/**").hasRole("ADMIN")
                 .anyRequest().authenticated()
