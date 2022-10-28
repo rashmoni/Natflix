@@ -1,0 +1,9 @@
+services:
+  spring:
+    image: 'openjdk:latest'
+    container_name: back-end-server
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./target:/webserver
+    command: sh -c "sleep 10 && java -jar /webserver/natflix.jar"

@@ -1,5 +1,5 @@
 package com.novare.natflix.Service;
-
+/*
 import com.novare.natflix.Entity.MyUserDetails;
 import com.novare.natflix.Entity.User;
 import com.novare.natflix.Repository.UserRepository;
@@ -25,4 +25,4 @@ public class MyUserDetailsService implements UserDetailsService {
 
         return user.map(MyUserDetails::new).get();
     }
-}
+}*/

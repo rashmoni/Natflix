@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bc9d0187.css",
+    "main.js": "/static/js/main.e8e272eb.js",
+    "static/media/background.jpg": "/static/media/background.b0f13c93e8dfb9c1b2b0.jpg",
+    "static/media/NetflixSans-Bold.otf": "/static/media/NetflixSans-Bold.f61f7a737cfe2b1350b3.otf",
+    "static/media/NetflixSans-Regular.otf": "/static/media/NetflixSans-Regular.34b07abc629b899d2ec0.otf",
+    "static/media/banner.png": "/static/media/banner.90b47402d2ae3032f4ae.png",
+    "static/media/logo.svg": "/static/media/logo.6f41452d60bfffac0363889b4b9d950d.svg",
+    "static/media/icon-no-movie-red.svg": "/static/media/icon-no-movie-red.c384a3be9a0c0cf38522576ac3cfd66b.svg",
+    "static/media/icon-loader-gray-4.svg": "/static/media/icon-loader-gray-4.4aaaafa7f52c41e04113f7247cc1b811.svg",
+    "static/media/icon-back-white.svg": "/static/media/icon-back-white.edf64caa206540b90e6fb0e944ca8743.svg",
+    "static/media/icon-error-red.svg": "/static/media/icon-error-red.ec11578cf54984b61070d7f5a5c21aef.svg",
+    "static/media/icon-info-white.svg": "/static/media/icon-info-white.b9c7add7fae66acdde94b2098dedd83c.svg",
+    "index.html": "/index.html",
+    "static/media/icon-caret-down-white.svg": "/static/media/icon-caret-down-white.557172e366f243a4e72b.svg",
+    "static/media/icon-play-black.svg": "/static/media/icon-play-black.33549fe5f9cf9db3ea579668c5010911.svg",
+    "main.bc9d0187.css.map": "/static/css/main.bc9d0187.css.map",
+    "main.e8e272eb.js.map": "/static/js/main.e8e272eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc9d0187.css",
+    "static/js/main.e8e272eb.js"
+  ]
+}

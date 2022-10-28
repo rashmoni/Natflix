@@ -1,5 +1,5 @@
 package com.novare.natflix.Config;
-
+/*
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpMethod;
@@ -24,14 +24,17 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
+        http.csrf().disable()
+                .authorizeRequests()
                 .antMatchers("/admin").hasRole("ADMIN")
                 .antMatchers("/user", "/api/**").hasAnyRole("ADMIN", "USER")
                 .antMatchers(HttpMethod.POST, "/register").permitAll()
                 .anyRequest()
                 .authenticated()
                 .and().formLogin()
-                .and().csrf().disable();
+                .usernameParameter("email")
+                .defaultSuccessUrl("/api/content")
+                .permitAll();
     }
 
     @Bean
@@ -39,3 +42,4 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 }
+*/

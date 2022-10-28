@@ -1,5 +1,5 @@
 package com.novare.natflix.Entity;
-import lombok.AllArgsConstructor;
+/*import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 
@@ -59,4 +59,4 @@ public class User {
     public void setRoles(String roles) {
         this.roles = roles;
     }
-}
+}*/

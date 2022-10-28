@@ -1,9 +1,10 @@
 package com.novare.natflix.Controller;
-
+/*
 import com.novare.natflix.Entity.User;
 import com.novare.natflix.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +18,7 @@ public class HomeResource {
     @Autowired
     UserRepository userRepository;
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/register")
     public String Signup(@RequestBody User data) {
         User user = User.builder()
@@ -31,3 +33,4 @@ public class HomeResource {
     }
 
 }
+*/
