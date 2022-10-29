@@ -32,11 +32,11 @@ Project is created with:
 
 ## Project mamnagement Documents
 Project Management Documents:
-- [Architecture Diagram]()
-- [UseCase Diagram]()
-- [Product Backlog]()
-- [Create AWS S3 bucket]()
-- [Create AWS RDS]()
+- [Architecture Diagram](https://github.com/rashmoni/Natflix/blob/main/ProjectManagement/Architecture.pdf)
+- [UseCase Diagram](https://github.com/rashmoni/Natflix/blob/main/ProjectManagement/UseCase.pdf)
+- [Product Backlog](https://github.com/rashmoni/Natflix/blob/main/ProjectManagement/Product_Backlog_Natflix.xlsx)
+- [Create AWS S3 bucket](https://github.com/rashmoni/Natflix/blob/main/ProjectManagement/Steps%20to%20Create%20AWS%20S3%20bucket.docx)
+- [Create AWS RDS](https://github.com/rashmoni/Natflix/blob/main/ProjectManagement/Steps%20to%20Create%20AWS%20RDS.docx)
 
 ## Run
 To run this application do the following steps.
