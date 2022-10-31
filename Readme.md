@@ -46,6 +46,15 @@ To run this application do the following steps.
 4. docker compose up
 5. Access the application on port 8080.
 
+NOTE -  Due to AWS security requirement, I have to disabled the access key id of the S3 bucket.
+This means that update, delete and add new content features will not work. Please ping me before testing the application and I will provide separate access key which you can place in application.properties file and access use al the features.
+
+This one is inactive, I will provide new one separately -
+<img width="892" alt="Screenshot 2022-10-31 at 15 03 14" src="https://user-images.githubusercontent.com/91156734/199026724-dd5eb154-52dc-4a33-a7f0-0e0987dacac4.png">
+
+
+
+
 ## Folder structure -
 /Natflix
  - src 
